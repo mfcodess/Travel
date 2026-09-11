@@ -1,17 +1,23 @@
 //
-//  TravellApp.swift
-//  Travell
+//  TravelApp.swift
+//  Travel
 //
-//  Created by Максим  on 11.09.2026.
+//  Created by Максим  on 10.08.2026.
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
-struct TravellApp: App {
+struct TravelApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
 }
